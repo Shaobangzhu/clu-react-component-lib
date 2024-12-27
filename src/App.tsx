@@ -1,16 +1,13 @@
 import React from 'react';
+import Button, { ButtonType, ButtonSize } from './components/Button/button.tsx'
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hello World!</h1>
-        <h2>YMCA</h2>
-        <h3>Typescript YYDS</h3>
-        <hr/>
-        <code>
-          const fibonacci = fibo(n - 1) + fibo(n - 2);
-        </code>
+        <Button disabled> Test </Button>
+        <Button btnType={ButtonType.Primary} size={ButtonSize.Large}> Primary Test </Button>
+        <Button btnType={ButtonType.Link} href="http://www.extron.com"> Link Test </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
